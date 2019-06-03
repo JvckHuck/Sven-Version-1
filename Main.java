@@ -1,3 +1,4 @@
+// Cooper McCaffrey
 // imported libraries
 
 import java.util.Scanner;   // keyboard & file inputs & outputs
@@ -24,11 +25,11 @@ class Main
 
     // to obtain human's input  
     Scanner keyboard = new Scanner(System.in);          
-
+  
     String userMenuChoice = "";   // human inputted menu choice
     String newItem = "";          // new item added to inventory
     String PIN = "0000";
-    
+
     // customer selection from menu list of items
     int customerSelection = 0;    
 
@@ -52,13 +53,14 @@ class Main
     {
       System.err.println(inputOutputError); // directing system error to error log file
     }
-    
+
+
     ////////////////////// setting up the screen
     clearScreen();
 
     System.out.println("\n\n");       // blank lines to space output
 
-    System.out.println("\033[30m\033[42mHello, I am the world's first smart vending machine. My name is " + NAME + "!\033[0m");
+    System.out.println("\033[1;44mHello, I am the world's first smart vending machine. My name is " + NAME + "!\033[0m");
     
     displayMachine();
     
@@ -198,8 +200,9 @@ class Main
       {
         System.out.println("YOU HAVE ENTERED GAME MODE");
         Hangman game = new Hangman();
-            game.play();
+          game.play();
       }
+
     } // end of while loop
 
 
@@ -224,42 +227,42 @@ class Main
 
   public static void displayMachine()
   {
-     System.out.println("  \033[34m  _____  __      __   ______   _   _           ");
+    System.out.println("  \033[34m  _____   ___     ___  _______  __  __           ");
      System.out.println("  \033[34m / ____|  \\ \\    / /  |  ____| | \\ | |       ");
      System.out.println(" \033[34m | (___     \\ \\  / /   | |__    |  \\| |       ");
-     System.out.println(" \033[34m \\___ \\      \\ \\/ /    |  __|   | . ` |      ");
+     System.out.println(" \033[34m \\___  \\     \\ \\/ /    |  __|   | . ` |      ");
      System.out.println(" \033[34m  ____) |     \\  /     | |____  | |\\  |        ");
      System.out.println(" \033[34m |_____/       \\/      |______| |_| \\_|        ");
 
 
       System.out.println("\033[36m|____________________________________________|"); 
       System.out.println("|####### \033[34mMinich's Sven Vending Machine\033[0m\033[36m ######|"); 
-      System.out.println("|#|===========================|##############|"); 
-      System.out.println("|#|  \033[34m=====\033[36m  \033[32m..--''`\033[36m\033[36\033[36m  \033[33m|~~``|\033[36m   |##|````````|##|"); 
-      System.out.println("|#|  \033[34m|  |\033[36m   \033[32m\\     |\033[36\033[36m  \033[32m\033[33m:    | \033[36m  |##| \033[32mHello, \033[36m|##|"); 
-      System.out.println("|#|  \033[34m|___|\033[36m   \033[32m/___ |\033[36m  \033[33m| ___|\033[36m   |##|\033[32mi'm Sven\033[36m|##|"); 
+      System.out.println("|#|===========================|#############T|"); 
+      System.out.println("|#|  \033[34m=====\033[36m  \033[32m..--''`\033[36m\033[36\033[36m  \033[33m|~~``|\033[36m   |##|````````|#y|"); 
+      System.out.println("|#|  \033[34m|  |\033[36m   \033[32m\\     |\033[36\033[36m  \033[32m\033[33m:    | \033[36m  |##| \033[32mHello, \033[36m|#p|"); 
+      System.out.println("|#|  \033[34m|___|\033[36m   \033[32m/___ |\033[36m  \033[33m| ___|\033[36m   |##|\033[32mi'm Sven\033[36m|#e|"); 
       System.out.println("|#|  \033[30m/=__\\  ./.__\\   |/,__\\\033[36m   |##| \033[32mplease\033[36m |##|"); 
-      System.out.println("|#|  \033[30m\\__//   \\__//    \\__//\033[36m   |##| \033[32mchoose\033[36m |##|"); 
-      System.out.println("|#|===========================|##| \033[32man item\033[36m ##|"); 
-      System.out.println("|#|```````````````````````````|##############|"); 
-      System.out.println("|#| \033[31m=.._\033[36m      \033[35m+++\033[36m     \033[32m//////\033[36m  |##############|"); 
-      System.out.println("|#| \033[31m\\/  \\\033[36m     \033[35m| |\033[36m    \033[32m\\ \\   \\\033[36m  |#|`````````|##|"); 
-      System.out.println("|#|  \033[31m\\___\\\033[36m    \033[35m|_|\033[36m     \033[32m/___ /\033[36m  |#| \033[32m_______\033[36m |##|"); 
+      System.out.println("|#|  \033[30m\\__//   \\__//    \\__//\033[36m   |##| \033[32mchoose\033[36m |#M|"); 
+      System.out.println("|#|===========================|##| \033[32man item\033[36m #i|"); 
+      System.out.println("|#|```````````````````````````|#############n|"); 
+      System.out.println("|#| \033[31m=.._\033[36m      \033[35m+++\033[36m     \033[32m//////\033[36m  |#############i|"); 
+      System.out.println("|#| \033[31m\\/  \\\033[36m     \033[35m| |\033[36m    \033[32m\\ \\   \\\033[36m  |#|`````````|#c|"); 
+      System.out.println("|#|  \033[31m\\___\\\033[36m    \033[35m|_|\033[36m     \033[32m/___ /\033[36m  |#| \033[32m_______\033[36m |#h|"); 
       System.out.println("|#|  \033[30m/ __\\   /__ \\   // __\\\033[36m\033[36m   |#| \033[0m\033[43m|1|2|3|\033[0m\033[36m |##|"); 
-      System.out.println("|#|  \033[30m\\__//-  \\__//   -\\__//\033[36m   |#| \033[0m\033[43m|4|5|6|\033[0m\033[36m |##|"); 
-      System.out.println("|#|===========================|#| \033[0m\033[43m|7|8|9|\033[0m\033[36m |##|"); 
-      System.out.println("|#|```````````````````````````|#| ``````` |##|"); 
+      System.out.println("|#|  \033[30m\\__//-  \\__//   -\\__//\033[36m   |#| \033[0m\033[43m|4|5|6|\033[0m\033[36m |#F|"); 
+      System.out.println("|#|===========================|#| \033[0m\033[43m|7|8|9|\033[0m\033[36m |#o|"); 
+      System.out.println("|#|```````````````````````````|#| ``````` |#r|"); 
       System.out.println("|#| ..--    \033[34m______\033[36m   \033[31m.--._.\033[36m   |#|[=======]|##|"); 
-      System.out.println("|#| \\   \\   \033[34m|    |\033[36m   \033[31m|    |\033[36m   |#|  _   _  |##|"); 
+      System.out.println("|#| \\   \\   \033[34m|    |\033[36m   \033[31m|    |\033[36m   |#|  _   _  |#A|"); 
       System.out.println("|#|  \\___\\  \033[34m: ___:\033[36m   \033[31m| ___|\033[36m   |#| \033[35m|||\033[36m \033[30m( )\033[36m |##|"); 
-      System.out.println("|#|  \033[30m/ __\\  |/ __\\   // __\\\033[36m   |#| \033[35m|||\033[36m  `  |##|"); 
-      System.out.println("|#|  \033[30m\\__//   \\__//  /_\\__//\033[36m   |#|  ~      |##|"); 
-      System.out.println("|#|===========================|#|_________|##|");     
-      System.out.println("|#|\033[30m```````````````````````````\033[36m|##############|");
-      System.out.println("|############################################|"); 
-      System.out.println("|#|||||||||||||||||||||||||||||####\033[30m```````\033[36m###|");     
-      System.out.println("|#||||||||||||\033[0m\033[43mPUSH\033[0m\033[36m|||||||||||||####\033[30m\\|||||/\033[36m###|");
-      System.out.println("|############################################|");   
+      System.out.println("|#|  \033[30m/ __\\  |/ __\\   // __\\\033[36m   |#| \033[35m|||\033[36m  `  |#S|"); 
+      System.out.println("|#|  \033[30m\\__//   \\__//  /_\\__//\033[36m   |#|  ~      |#u|"); 
+      System.out.println("|#|===========================|#|_________|#p|");     
+      System.out.println("|#|\033[30m```````````````````````````\033[36m|#############r|");
+      System.out.println("|###########################################i|"); 
+      System.out.println("|#|||||||||||||||||||||||||||||####\033[30m```````\033[36m##s|");     
+      System.out.println("|#||||||||||||\033[0m\033[43mPUSH\033[0m\033[36m|||||||||||||####\033[30m\\|||||/\033[36m##e|");
+      System.out.println("|###########################################!|");   
       System.out.println("|____________________________________________|\033[0m");
   }
 
